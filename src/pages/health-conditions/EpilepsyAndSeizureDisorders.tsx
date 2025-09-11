@@ -1,12 +1,11 @@
 import ServicePageLayout from '@/components/ServicePageLayout';
 import { Brain, Heart, Activity, Zap } from 'lucide-react';
-import epilepsyImage from '@/assets/images/stroke.jpg';
 
 const EpilepsyAndSeizureDisorders = () => {
     const content = {
         title: 'Epilepsy and Seizure Disorders',
         badgeText: 'Neurological Condition',
-        imageUrl: epilepsyImage,
+        imageUrl: '/assets/blogs/epliepsy.jpg',
         imageAlt: 'Illustration of brain activity during a seizure',
         description: 'Epilepsy is a central nervous system (neurological) disorder in which brain activity becomes abnormal, causing seizures or periods of unusual behavior, sensations, and sometimes loss of awareness.',
         sections: [

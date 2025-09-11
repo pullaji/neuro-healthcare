@@ -53,7 +53,7 @@ const blogPosts = [
     date: "2024-01-15",
     readTime: "8 min read",
     category: "Stroke Care",
-    image: "/src/assets/images/stroke.jpg",
+    image: "/assets/blogs/stroke.jpg",
     tags: ["Stroke", "Recovery", "Rehabilitation", "Neuroplasticity"]
   },
   {
@@ -114,7 +114,7 @@ const blogPosts = [
     date: "2024-01-12",
     readTime: "6 min read",
     category: "Epilepsy Care",
-    image: "/src/assets/images/epliepsy.jpg",
+    image: "/assets/blogs/epliepsy.jpg",
     tags: ["Epilepsy", "Treatment", "EEG", "Medication"]
   },
   {
@@ -165,7 +165,7 @@ const blogPosts = [
     date: "2024-01-10",
     readTime: "7 min read",
     category: "Parkinson's Care",
-    image: "/src/assets/images/Parkinson.jpg",
+    image: "/assets/blogs/Parkinson.jpg",
     tags: ["Parkinson's", "Movement Disorders", "DBS", "Early Detection"]
   },
   {
@@ -214,7 +214,7 @@ const blogPosts = [
     date: "2024-01-08",
     readTime: "9 min read",
     category: "Pediatric Care",
-    image: "/src/assets/images/Pediatric.jpg",
+    image: "/assets/blogs/Pediatric.jpg",
     tags: ["Pediatric", "Children", "Development", "Family Care"]
   },
   {
@@ -262,7 +262,7 @@ const blogPosts = [
     date: "2024-01-05",
     readTime: "5 min read",
     category: "Diagnostics",
-    image: "/src/assets/images/neurodiagnostics.jpg",
+    image: "/assets/images/neuro.jpg",
     tags: ["Diagnostics", "MRI", "EEG", "Imaging"]
   },
   {
@@ -311,7 +311,7 @@ const blogPosts = [
     date: "2024-01-03",
     readTime: "6 min read",
     category: "Critical Care",
-    image: "/src/assets/images/Neurocritical .jpg",
+    image: "/assets/blogs/Neurocritical .jpg",
     tags: ["Critical Care", "Emergency", "ICU", "Life Support"]
   }
 ];

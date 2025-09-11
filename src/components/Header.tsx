@@ -18,7 +18,7 @@ const Header = ({ onBookAppointment }: HeaderProps) => {
     { label: 'About', path: '/about' },
     { label: 'Services', path: '/services' },
     { label: 'Doctors', path: '/doctors' },
-    { label: 'Blog', path: '/blog' },
+    { label: 'Blogs', path: '/blog' },
     { label: 'Contact', path: '/contact' },
   ];
 
@@ -36,7 +36,7 @@ const Header = ({ onBookAppointment }: HeaderProps) => {
       ]
     },
     { icon: Users, label: 'Doctors', path: '/doctors', type: 'link' },
-    { icon: BookOpen, label: 'Blog', path: '/blog', type: 'link' },
+    { icon: BookOpen, label: 'Blogs', path: '/blog', type: 'link' },
     { icon: Phone, label: 'Contact', path: '/contact', type: 'link' },
   ];
 

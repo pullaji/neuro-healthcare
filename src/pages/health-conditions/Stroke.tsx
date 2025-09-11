@@ -1,13 +1,12 @@
 import React from 'react';
 import ServicePageLayout from '@/components/ServicePageLayout';
 import { Brain, Heart, Activity, Zap } from 'lucide-react';
-import strokeImage from '@/assets/images/stroke.jpg';
 
 const Stroke = () => {
     const content = {
         title: 'Stroke (Ischemic, Hemorrhagic)',
         badgeText: 'Medical Emergency',
-        imageUrl: strokeImage,
+        imageUrl: '/assets/blogs/stroke.jpg',
         imageAlt: 'Illustration of a brain during a stroke',
         description: 'A stroke occur when the blood supply to part of your brain is interrupted or reduced, preventing brain tissue from getting oxygen and nutrients. Brain cells begin to die in minutes. A stroke is a medical emergency, and prompt treatment is crucial.',
         sections: [

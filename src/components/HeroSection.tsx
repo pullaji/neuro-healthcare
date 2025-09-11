@@ -181,7 +181,7 @@ const HeroSection = ({ onBookAppointment }: HeroSectionProps) => {
                 <motion.div
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
-                  className="text-white text-6xl"
+                  className="text-white text-8xl"
                 >
                   🧠
                 </motion.div>

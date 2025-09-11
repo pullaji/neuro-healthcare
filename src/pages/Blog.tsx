@@ -21,7 +21,7 @@ const blogPosts = [
     date: "2024-01-15",
     readTime: "8 min read",
     category: "Stroke Care",
-    image: "/src/assets/images/stroke.jpg",
+    image: "/assets/blogs/stroke.jpg",
     tags: ["Stroke", "Recovery", "Rehabilitation", "Neuroplasticity"]
   },
   {
@@ -34,7 +34,7 @@ const blogPosts = [
     date: "2024-01-12",
     readTime: "6 min read",
     category: "Epilepsy Care",
-    image: "/src/assets/images/epliepsy.jpg",
+    image: "/assets/blogs/epliepsy.jpg",
     tags: ["Epilepsy", "Treatment", "EEG", "Medication"]
   },
   {
@@ -47,7 +47,7 @@ const blogPosts = [
     date: "2024-01-10",
     readTime: "7 min read",
     category: "Parkinson's Care",
-    image: "/src/assets/images/Parkinson.jpg",
+    image: "/assets/blogs/Parkinson.jpg",
     tags: ["Parkinson's", "Movement Disorders", "DBS", "Early Detection"]
   },
   {
@@ -60,7 +60,7 @@ const blogPosts = [
     date: "2024-01-08",
     readTime: "9 min read",
     category: "Pediatric Care",
-    image: "/src/assets/images/Pediatric.jpg",
+    image: "/assets/blogs/Pediatric.jpg",
     tags: ["Pediatric", "Children", "Development", "Family Care"]
   },
   {
@@ -73,7 +73,7 @@ const blogPosts = [
     date: "2024-01-05",
     readTime: "5 min read",
     category: "Diagnostics",
-    image: "/src/assets/images/neurodiagnostics.jpg",
+    image: "/assets/blogs/Neurodiagnostics.jpg",
     tags: ["Diagnostics", "MRI", "EEG", "Imaging"]
   },
   {
@@ -86,7 +86,7 @@ const blogPosts = [
     date: "2024-01-03",
     readTime: "6 min read",
     category: "Critical Care",
-    image: "/src/assets/images/Neurocritical .jpg",
+    image: "/assets/blogs/Neurocritical .jpg",
     tags: ["Critical Care", "Emergency", "ICU", "Life Support"]
   }
 ];
@@ -186,35 +186,35 @@ const Blog = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <Link to={`/blog/${post.id}`}>
-                  <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
+                  <Card className="h-full min-h-[500px] border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
                   <div className="relative overflow-hidden rounded-t-lg">
                     <img
                       src={post.image}
                       alt={post.title}
-                      className="w-full h-40 sm:h-44 md:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-56 sm:h-60 md:h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300"
                       onError={(e) => {
                         // Fallback to a placeholder if image doesn't exist
                         e.currentTarget.src = "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=center";
                       }}
                     />
                   </div>
-                  <CardHeader className="pb-2 sm:pb-3 px-3 sm:px-6">
-                    <CardTitle className="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-teal-600 transition-colors line-clamp-2 leading-tight">
+                  <CardHeader className="pb-3 sm:pb-4 px-4 sm:px-6">
+                    <CardTitle className="text-lg sm:text-xl font-semibold text-gray-900 group-hover:text-teal-600 transition-colors line-clamp-2 leading-tight">
                       {post.title}
                     </CardTitle>
-                    <CardDescription className="text-sm sm:text-base text-gray-600 line-clamp-3 leading-relaxed">
+                    <CardDescription className="text-sm sm:text-base text-gray-600 line-clamp-3 leading-relaxed mt-2">
                       {post.excerpt}
                     </CardDescription>
                   </CardHeader>
-                   <CardContent className="pt-0 px-3 sm:px-6 pb-4 sm:pb-6">
-                    <div className="flex items-center gap-2 mb-3 sm:mb-4">
-                      <User className="h-3 w-3 sm:h-4 sm:w-4 text-gray-400 flex-shrink-0" />
+                   <CardContent className="pt-0 px-4 sm:px-6 pb-5 sm:pb-6 flex flex-col justify-between flex-1">
+                    <div className="flex items-center gap-2 mb-4">
+                      <User className="h-4 w-4 text-gray-400 flex-shrink-0" />
                       <div className="min-w-0 flex-1">
-                        <p className="text-xs sm:text-sm font-medium text-gray-900 truncate">{post.author}</p>
+                        <p className="text-sm font-medium text-gray-900 truncate">{post.author}</p>
                         <p className="text-xs text-gray-500 truncate">{post.authorRole}</p>
                       </div>
                     </div>
-                    <div className="flex flex-wrap gap-1 mb-3 sm:mb-4">
+                    <div className="flex flex-wrap gap-1 mb-4">
                       {post.tags.slice(0, 3).map((tag) => (
                         <Badge key={tag} variant="outline" className="text-xs px-2 py-1">
                           {tag}
@@ -224,10 +224,10 @@ const Blog = () => {
                     <Button 
                       variant="outline" 
                       size="sm"
-                      className="w-full text-xs sm:text-sm group-hover:bg-teal-50 group-hover:border-teal-200 group-hover:text-teal-600 transition-colors"
+                      className="w-full text-sm sm:text-base py-2.5 group-hover:bg-teal-50 group-hover:border-teal-200 group-hover:text-teal-600 transition-colors mt-auto"
                     >
                       Read More
-                      <ArrowRight className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </CardContent>
                 </Card>

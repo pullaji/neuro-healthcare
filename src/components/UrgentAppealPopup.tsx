@@ -1,4 +1,3 @@
-import neuroImage from "@/assets/images/neuro.jpg";
 import { X } from "lucide-react";
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
@@ -63,7 +62,7 @@ const UrgentAppealPopup: React.FC<UrgentAppealPopupProps> = ({ isOpen, onClose }
         </div>
         {/* Image Section */}
         <div className="md:w-1/2 relative">
-          <img src={neuroImage} alt="Neuro Healthcare Hospital" className="w-full h-full object-cover" />
+          <img src="/assets/images/neuro.jpg" alt="Neuro Healthcare Hospital" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         </div>
       </div>

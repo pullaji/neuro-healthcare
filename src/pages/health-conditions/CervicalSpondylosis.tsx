@@ -1,13 +1,12 @@
 import React from 'react';
 import ServicePageLayout from '@/components/ServicePageLayout';
 import { Brain, Heart, Activity, Zap } from 'lucide-react';
-import cervicalImage from '@/assets/images/cervical.jpg';
 
 const CervicalSpondylosis = () => {
     const content = {
         title: 'Cervical Spondylosis',
         badgeText: 'Degenerative Condition',
-        imageUrl: cervicalImage,
+        imageUrl: '/assets/images/cervical.jpg',
         imageAlt: 'Illustration of a spine with cervical spondylosis',
         description: 'Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones (bone spurs).',
         sections: [
