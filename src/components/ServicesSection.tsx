@@ -26,7 +26,7 @@ const services = [
   {
     icon: Activity,
     title: "Parkinson's Management",
-    description: "Comprehensive movement disorder treatment including DBS therapy and medication optimization.",
+    description: "Comprehensive movement disorder treatment including and medication optimization.",
     badge: "Advanced Treatment",
     color: "from-blue-500 to-cyan-500",
     path: "/services/parkinsons-management"
@@ -34,7 +34,7 @@ const services = [
   {
     icon: Stethoscope,
     title: "Neurodiagnostics",
-    description: "State-of-the-art diagnostic services including MRI, CT, EEG, and neuropsychological assessments.",
+    description: "State-of-the-art diagnostic services including  and neuropsychological assessments.",
     badge: "Diagnostics",
     color: "from-green-500 to-teal-500",
     path: "/services/neurodiagnostics"
